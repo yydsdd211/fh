@@ -221,9 +221,9 @@
         showToast('请输入目标网址！', 'error');
         return;
       }
-      if (!/^https?:\/\//i.test(url)) {
-          showToast('仅支持以 http:// 或 https:// 开头的链接！', 'error');
-          return;
+      if (!/^https:\/\//i.test(url)) {
+        showToast('仅支持以 https:// 开头的链接！', 'error');
+        return;
       }
 
       btn.disabled = true;
